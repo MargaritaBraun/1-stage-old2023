@@ -23,6 +23,9 @@
     border: 2px solid #F1CDB3;
     cursor: pointer;
     transition: all .3s;
+    &:hover {
+        background-color: $color-primary-light;
+    }
     span {
         @include button-text;
     }
