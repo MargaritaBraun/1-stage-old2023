@@ -289,4 +289,55 @@ h1 {
 
 .right-arrow {
   transform: rotate(180deg);
-}/*# sourceMappingURL=style.css.map */
+}
+
+.help__container {
+  width: 1200px;
+  height: 431px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 80px 40px 100px 40px;
+}
+.help__container h3 {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3.5rem;
+  line-height: 4.5rem;
+  letter-spacing: 0.06em;
+  color: #545454;
+}
+
+.help-list {
+  width: 1026px;
+  height: 281px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.help-list .list-item {
+  width: 175px;
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.help-list .list-item .img-list-item {
+  text-align: center;
+}
+.help-list .list-item h4 {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 2.3rem;
+  letter-spacing: 0.06em;
+  color: #545454;
+}
+
+/*# sourceMappingURL=style.css.map */
