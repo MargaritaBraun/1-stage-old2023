@@ -150,6 +150,7 @@ h1 {
   height: 52px;
   cursor: pointer;
   transition: all 0.3s;
+  margin: 0;
 }
 
 .startScreen {
@@ -475,8 +476,18 @@ h1 {
 
 .footer__container {
   display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+  width: 1200px;
 }
 
+.footer-contacts {
+  width: 305px;
+  height: 234px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 .footer-contacts h3 {
   font-family: "Georgia";
   font-size: 3.5rem;
@@ -490,12 +501,15 @@ h1 {
 
 .mail-block {
   width: 251px;
-  height: 32px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
 .mail-block .mail-icon {
   background-image: url("../img/icon-email.svg");
-  width: 100%;
-  height: 100%;
+  width: 40px;
+  height: 32px;
   background-size: contain;
   display: inline-block;
   background-repeat: no-repeat;
@@ -515,12 +529,18 @@ h1 {
 .phone-block {
   width: 239px;
   height: 32px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
 .phone-block .phone-icon {
-  background-image: url("../img/icon-phone.svg") no-repeat;
-  width: 100%;
-  height: 100%;
+  background-image: url("../img/icon-phone.svg");
+  width: 40px;
+  height: 32px;
   display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 .phone-block h4 {
   font-family: "Georgia";
@@ -531,4 +551,63 @@ h1 {
   letter-spacing: 0.06em;
   color: #545454;
   color: #F1CDB3;
+}
+
+.locations-block {
+  width: 302px;
+  height: 234px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.locations-block h3 {
+  font-family: "Georgia";
+  font-size: 3.5rem;
+  line-height: 4.5rem;
+  letter-spacing: 0.06em;
+  color: #545454;
+  font-style: normal;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+
+.adress-location {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 302px;
+}
+.adress-location .icon-block {
+  width: 22px;
+  height: 32px;
+}
+.adress-location .icon-block .location-icon {
+  background-image: url("../img/icon-marker.svg");
+  width: 22px;
+  height: 32px;
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.adress-location h4 {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 2.3rem;
+  letter-spacing: 0.06em;
+  color: #545454;
+  color: #F1CDB3;
+  padding-left: 20px;
+}
+
+.footer-img__container .footer-img {
+  background-image: url("../img/footer-puppy.png");
+  width: 300px;
+  height: 310px;
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
 }/*# sourceMappingURL=style.css.map */
