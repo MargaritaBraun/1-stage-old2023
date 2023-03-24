@@ -29,7 +29,8 @@ body {
 
 //header
     .header {
-        background: url("noise-transparent.png"),
+        height: 90px;
+        background: url('../img/noise-transparent.svg'),
         radial-gradient(110.67% 538.64% at 5.73% 50%, #513d2f 0%, #1a1a1c 100%),
         #211f20;
     }
@@ -46,7 +47,7 @@ body {
 //logo_title
 h1 {
     font-size: 3.2rem;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
     font-weight: 400;
     line-height: 3.5rem;
     letter-spacing: 0.06em;

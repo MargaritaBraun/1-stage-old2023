@@ -1,0 +1,50 @@
+.footer {
+    background: url('../img/noise-transparent.svg'), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
+}
+
+.footer__container {
+    display: flex;
+}
+
+.footer-contacts {
+
+    h3 {
+        @include h3;
+        color: $color-light-xl;
+    }
+}
+
+.mail-block {
+    width: 251px;
+    height: 32px;
+    .mail-icon {
+        background-image: url('../img/icon-email.svg');
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+        display: inline-block;
+        background-repeat: no-repeat;
+    }
+
+    h4 {
+        @include h4;
+        color: $color-primary;
+        text-decoration: underline;
+    }
+}
+
+.phone-block {
+    width: 239px;
+    height: 32px;
+    .phone-icon {
+        background-image: url('../img/icon-phone.svg') no-repeat;
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+    }
+
+    h4 {
+        @include h4;
+        color: $color-primary;
+    }
+}
