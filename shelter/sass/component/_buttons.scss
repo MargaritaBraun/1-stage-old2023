@@ -5,7 +5,7 @@
     background-color: $color-button;
     margin-top: 42px;
     cursor: pointer;
-    transition: all .3s;
+    
     span {
         width: 117px;
         height: 22px;
@@ -13,6 +13,8 @@
     }
     &:hover {
         background-color: $color-button-active;
+        transform: scale(105%);
+        transition: background-color 3s, transform 2.5s;
     }
 }
 
@@ -25,6 +27,8 @@
     transition: all .3s;
     &:hover {
         background-color: $color-primary-light;
+        transform: scale(85%);
+        transition: background-color 3s, transform 2.5s;
     }
     span {
         @include button-text;
