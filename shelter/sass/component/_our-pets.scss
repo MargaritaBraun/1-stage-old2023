@@ -55,4 +55,23 @@
 .navigation__container {
     display: flex;
     justify-content: space-evenly;
+
+}
+
+.center-arrow-icon {
+    fill: #f1cdb38f;
+  }
+
+.right-arrow-icon {
+    cursor: pointer;
+    fill: #f1cdb38f;
+}
+
+.right-right-arrow-icon {
+    cursor: pointer;
+    fill: #f1cdb38f;
+}
+
+.button_paginator_inactive {
+    cursor: pointer;
 }

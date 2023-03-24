@@ -56,13 +56,15 @@ body {
   align-items: center;
 }
 
-h1 {
+.logo_title {
+  padding: 31px 0 1px 1px;
+}
+.logo_title .logo-href {
   font-size: 3.2rem;
   font-family: "Georgia", "Times New Roman", Times, serif;
   font-weight: 400;
   line-height: 3.5rem;
   letter-spacing: 0.06em;
-  padding: 31px 0 1px 1px;
   color: #F1CDB3;
 }
 
@@ -97,7 +99,11 @@ h1 {
   color: #FAFAFA;
   border-bottom: 3px solid #FAFAFA;
 }
-.item-menu:first-child {
+.item-menu a:first-child {
+  color: #FAFAFA;
+}
+
+.item-active {
   color: #FAFAFA;
   border-bottom: 3px solid #FAFAFA;
 }
@@ -181,12 +187,13 @@ h1 {
   color: #FFFFFF;
   width: 310px;
 }
-.startScreen__block .text-startScreen {
+
+.text-startScreen {
   font-family: "Arial";
   font-size: 1.5rem;
   line-height: 2.4rem;
-  color: #4C4C4C;
   margin-top: 42px;
+  color: #cdcdcd;
 }
 
 .start-screen-puppy {
@@ -240,7 +247,6 @@ h1 {
   font-family: "Arial";
   font-size: 1.5rem;
   line-height: 2.4rem;
-  color: #4C4C4C;
   width: 430px;
 }
 
@@ -546,7 +552,6 @@ h1 {
   background-image: url("../img/icon-phone.svg");
   width: 40px;
   height: 32px;
-  display: inline-block;
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -618,4 +623,6 @@ h1 {
   display: inline-block;
   background-size: contain;
   background-repeat: no-repeat;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */

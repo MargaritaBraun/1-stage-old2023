@@ -22,11 +22,12 @@
     color: $color-light-xl;
     width: 310px;
     }
+}
 
-    .text-startScreen {
-        @include paragraph-l;
-        margin-top: 42px;
-    }
+.text-startScreen {
+    @include paragraph-l;
+    margin-top: 42px;
+    color: $color-dark-s;
 }
 
 .start-screen-puppy {
