@@ -56,11 +56,11 @@ body {
     letter-spacing: 0.06em;
     color: $color-primary;
     scroll-behavior: smooth;
-}
     &:hover {
         transform: scale(110%);
         transition: background-color 3s, transform 2.5s;
     }
+}
 }
 
 
