@@ -1,0 +1,38 @@
+@mixin paragraph-l {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+    color: $color-dark-s;
+}
+
+@mixin h3 {
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 3.5rem;
+        line-height: 4.5rem;
+        letter-spacing: 0.06em;
+        color: $color-dark-l;
+}
+
+@mixin h4 {
+font-family: 'Georgia';
+font-style: normal;
+font-weight: 400;
+font-size: 2rem;
+line-height: 2.3rem;
+letter-spacing: 0.06em;
+color: $color-dark-l;
+}
+
+@mixin button-text {
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.7rem;
+        line-height: 2.2rem;
+        letter-spacing: 0.06em;
+        color: $color-dark-3xl;
+}

@@ -1,0 +1,33 @@
+.about__container {
+    height: 408px;
+    background-color: $color-light-xl;
+    margin: 80px 40px 100px 40px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.about-img {
+    padding: 0px 0px 0px 0px;
+    width: 300px;
+}
+
+.about-block {
+    width: 500px;
+    height: 390px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    h3 {
+        @include h3;
+        width: 370px;
+    }
+
+    .about-paragraf {
+        @include paragraph-l;
+        width: 430px;
+    }
+}

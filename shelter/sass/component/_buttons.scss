@@ -1,0 +1,32 @@
+.button-primary {
+    width: 207px;
+    height: 52px;
+    border-radius: 100px;
+    background-color: $color-button;
+    margin-top: 42px;
+    cursor: pointer;
+    span {
+        width: 117px;
+        height: 22px;
+        @include button-text;
+    }
+    &:hover {
+        background-color: $color-button-active;
+    }
+}
+
+.button_secondary {
+    width: 187px;
+    height: 52px;
+    border-radius: 100px;
+    border: 2px solid #F1CDB3;
+    span {
+        @include button-text;
+    }
+}
+
+.button-pets-card {
+    background-color: #F1CDB3;
+    width: 261px;
+    height: 52px;
+}

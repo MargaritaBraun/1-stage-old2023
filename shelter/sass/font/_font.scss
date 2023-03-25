@@ -1,0 +1,14 @@
+.item-menu {
+    a {
+        font-family: Arial;
+        font-size: 1.4rem;
+        font-style: normal;
+        font-weight: 400;
+        color: $item-menu-color;
+        line-height: 160%;
+        &:hover {
+            color: $item-menu-active;
+            border-bottom: 3px solid $item-menu-active;
+        }
+    }
+}
