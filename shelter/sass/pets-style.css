@@ -65,6 +65,10 @@ body {
   color: #545454;
   scroll-behavior: smooth;
 }
+.logo_title:hover {
+  transform: scale(110%);
+  transition: background-color 3s, transform 2.5s;
+}
 
 .logo_subtitle {
   font-family: "Arial";
@@ -186,16 +190,6 @@ body {
   padding: 80px 0 30px 0;
   text-align: center;
 }
-.our-pets__container h3 p {
-  font-family: "Georgia";
-  font-size: 3.5rem;
-  line-height: 4.5rem;
-  letter-spacing: 0.06em;
-  color: #545454;
-  font-style: normal;
-  font-weight: 400;
-  text-align: center;
-}
 
 .our-pets-cards_container {
   display: flex;
@@ -300,6 +294,10 @@ body {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  cursor: pointer;
+}
+.mail-block:hover {
+  color: #FFFFFF;
 }
 .mail-block .mail-icon {
   background-image: url("../img/icon-email.svg");
@@ -320,6 +318,9 @@ body {
   color: #F1CDB3;
   text-decoration: underline;
 }
+.mail-block h4:hover {
+  color: #FFFFFF;
+}
 
 .phone-block {
   width: 239px;
@@ -328,6 +329,7 @@ body {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  cursor: pointer;
 }
 .phone-block .phone-icon {
   background-image: url("../img/icon-phone.svg");
@@ -345,6 +347,9 @@ body {
   letter-spacing: 0.06em;
   color: #545454;
   color: #F1CDB3;
+}
+.phone-block h4:hover {
+  color: #FFFFFF;
 }
 
 .locations-block {
@@ -385,6 +390,10 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
 }
+.adress-location .icon-block .location-icon:hover {
+  transform: scale(120%);
+  transition: background-color 3s, transform 2.5s;
+}
 .adress-location h4 {
   font-family: "Georgia";
   font-style: normal;
@@ -395,6 +404,9 @@ body {
   color: #545454;
   color: #F1CDB3;
   padding-left: 20px;
+}
+.adress-location h4:hover {
+  color: #FFFFFF;
 }
 
 .footer-img__container .footer-img {

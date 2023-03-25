@@ -69,6 +69,10 @@ body {
   color: #F1CDB3;
   scroll-behavior: smooth;
 }
+.logo_title:hover {
+  transform: scale(110%);
+  transition: background-color 3s, transform 2.5s;
+}
 
 .logo_subtitle {
   font-family: "Arial";
@@ -277,10 +281,13 @@ body {
   color: #545454;
   font-style: normal;
   font-weight: 400;
-  width: 400px;
+  width: 330px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.petsSection__container h3 p {
+.petsSection__container h3 span {
   font-family: "Georgia";
   font-size: 3.5rem;
   line-height: 4.5rem;
@@ -359,7 +366,7 @@ body {
   text-align: center;
   margin: 5px 70px 0px 0px;
 }
-.help__container h3 p {
+.help__container h3 span {
   font-family: "Georgia";
   font-size: 3.5rem;
   line-height: 4.5rem;
@@ -447,15 +454,6 @@ body {
   font-style: normal;
   font-weight: 400;
 }
-.donation-block h3 span {
-  font-family: "Georgia";
-  font-size: 3.5rem;
-  line-height: 4.5rem;
-  letter-spacing: 0.06em;
-  color: #545454;
-  font-style: normal;
-  font-weight: 400;
-}
 .donation-block h5 {
   font-family: "Georgia";
   font-style: normal;
@@ -531,6 +529,10 @@ body {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  cursor: pointer;
+}
+.mail-block:hover {
+  color: #FFFFFF;
 }
 .mail-block .mail-icon {
   background-image: url("../img/icon-email.svg");
@@ -551,6 +553,9 @@ body {
   color: #F1CDB3;
   text-decoration: underline;
 }
+.mail-block h4:hover {
+  color: #FFFFFF;
+}
 
 .phone-block {
   width: 239px;
@@ -559,6 +564,7 @@ body {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  cursor: pointer;
 }
 .phone-block .phone-icon {
   background-image: url("../img/icon-phone.svg");
@@ -576,6 +582,9 @@ body {
   letter-spacing: 0.06em;
   color: #545454;
   color: #F1CDB3;
+}
+.phone-block h4:hover {
+  color: #FFFFFF;
 }
 
 .locations-block {
@@ -616,6 +625,10 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
 }
+.adress-location .icon-block .location-icon:hover {
+  transform: scale(120%);
+  transition: background-color 3s, transform 2.5s;
+}
 .adress-location h4 {
   font-family: "Georgia";
   font-style: normal;
@@ -626,6 +639,9 @@ body {
   color: #545454;
   color: #F1CDB3;
   padding-left: 20px;
+}
+.adress-location h4:hover {
+  color: #FFFFFF;
 }
 
 .footer-img__container .footer-img {
