@@ -109,6 +109,7 @@ h1 {
   background-color: #F1CDB3;
   margin-top: 42px;
   cursor: pointer;
+  transition: all 0.3s;
 }
 .button-primary span {
   width: 117px;
@@ -130,6 +131,8 @@ h1 {
   height: 52px;
   border-radius: 100px;
   border: 2px solid #F1CDB3;
+  cursor: pointer;
+  transition: all 0.3s;
 }
 .button_secondary span {
   font-family: "Georgia";
@@ -145,6 +148,8 @@ h1 {
   background-color: #F1CDB3;
   width: 261px;
   height: 52px;
+  cursor: pointer;
+  transition: all 0.3s;
 }
 
 .startScreen {
@@ -526,6 +531,4 @@ h1 {
   letter-spacing: 0.06em;
   color: #545454;
   color: #F1CDB3;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

@@ -5,6 +5,7 @@
     background-color: $color-button;
     margin-top: 42px;
     cursor: pointer;
+    transition: all .3s;
     span {
         width: 117px;
         height: 22px;
@@ -20,6 +21,8 @@
     height: 52px;
     border-radius: 100px;
     border: 2px solid #F1CDB3;
+    cursor: pointer;
+    transition: all .3s;
     span {
         @include button-text;
     }
@@ -29,4 +32,6 @@
     background-color: #F1CDB3;
     width: 261px;
     height: 52px;
+    cursor: pointer;
+    transition: all .3s;
 }
