@@ -316,10 +316,10 @@ body {
   letter-spacing: 0.06em;
   color: #545454;
   color: #F1CDB3;
-  text-decoration: underline;
 }
 .mail-block h4:hover {
   color: #FFFFFF;
+  text-decoration: underline;
 }
 
 .phone-block {

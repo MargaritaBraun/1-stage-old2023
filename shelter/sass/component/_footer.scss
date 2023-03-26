@@ -45,9 +45,9 @@
     h4 {
         @include h4;
         color: $color-primary;
-        text-decoration: underline;
         &:hover {
             color: $color-light-xl;
+            text-decoration: underline;
         }
     }
 }

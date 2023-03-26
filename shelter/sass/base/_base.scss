@@ -48,6 +48,10 @@ body {
 //logo_title
 .logo_title {
     padding: 31px 0 1px 1px;
+    &:hover {
+        transform: scale(110%);
+        transition: background-color 3s, transform 2.5s;
+    }
     .logo-href {
     font-size: 3.2rem;
     font-family: 'Georgia', 'Times New Roman', Times, serif;
@@ -56,10 +60,6 @@ body {
     letter-spacing: 0.06em;
     color: $color-primary;
     scroll-behavior: smooth;
-    &:hover {
-        transform: scale(110%);
-        transition: background-color 3s, transform 2.5s;
-    }
 }
 }
 
