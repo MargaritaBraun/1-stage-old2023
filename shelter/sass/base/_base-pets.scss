@@ -15,6 +15,7 @@ ul, ol, li {
 a {
     text-decoration: none;
     color: black;
+    scroll-behavior: smooth;
 }
 
 html {
@@ -28,14 +29,6 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-//header
-    .header {
-        height: 90px;
-        background: url('../img/noise-transparent.svg'),
-        radial-gradient(110.67% 538.64% at 5.73% 50%, #513d2f 0%, #1a1a1c 100%),
-        #211f20;
-    }
-
 .header__container {
     display: flex;
     width: $content-width;
@@ -44,8 +37,8 @@ body {
     align-items: center;
 }
 
-
 //logo_title
+
 .logo_title {
     padding: 31px 0 1px 1px;
     .logo-href {
@@ -54,11 +47,10 @@ body {
     font-weight: 400;
     line-height: 3.5rem;
     letter-spacing: 0.06em;
-    color: $color-primary;
+    color: $color-dark-l;
     scroll-behavior: smooth;
 }
 }
-
 
 .logo_subtitle {
     font-family: 'Arial';
@@ -67,8 +59,8 @@ body {
     font-size: 1.3rem;
     line-height: 1.5rem;
     letter-spacing: 0.1em;
-    padding: 10px 0 0 4px;
-    color: $color-light-xl;
+    padding: 10px 0 30px 4px;
+    color: $color-dark-3xl;
 }
 
 .nav-panel {
@@ -76,7 +68,7 @@ body {
     flex-direction: row;
     width: 443px;
     justify-content: space-between;
-    padding: 25px 0px 0px 0px;
+    padding: 10px 0px 0px 0px;
 }
 
 .item-menu {
@@ -85,25 +77,23 @@ body {
         font-size: 1.4rem;
         font-style: normal;
         font-weight: 400;
-        color: $item-menu-color;
+        color: $color-dark-l;
         line-height: 2.4rem;
         scroll-behavior: smooth;
-        
+
         &:hover {
-            color: $item-menu-active;
-            border-bottom: 3px solid $item-menu-active;
-            transition: border-bottom .8s ease-in-out;
+            color: $color-dark-3xl;
+            border-bottom: 3px solid $color-primary;
+            transition: all 0.4s ease-out;
         }
-
-        &:first-child {
-            color: $item-menu-active;
+        &:nth-child(2) {
+            color: $color-dark-3xl;
         }
-
     }
 }
 
 .item-active {
-    color: $item-menu-active;
-    border-bottom: 3px solid $item-menu-active;
+    color: $color-dark-3xl;
+    border-bottom: 3px solid $color-primary;
     pointer-events: none;
 }
