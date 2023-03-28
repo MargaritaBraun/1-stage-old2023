@@ -57,6 +57,10 @@ body {
     color: $color-primary;
     scroll-behavior: smooth;
 }
+    &:hover {
+        transform: scale(110%);
+        transition: background-color 3s, transform 2.5s;
+    }
 }
 
 
@@ -88,7 +92,7 @@ body {
         color: $item-menu-color;
         line-height: 2.4rem;
         scroll-behavior: smooth;
-        
+
         &:hover {
             color: $item-menu-active;
             border-bottom: 3px solid $item-menu-active;

@@ -11,7 +11,8 @@
             width: 320px;
             text-align: center;
             margin: 5px 70px 0px 0px;
-        p {
+            
+        span {
             @include h3;
             width: 308px;
             text-align: center;
