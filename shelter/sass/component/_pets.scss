@@ -9,17 +9,9 @@
     justify-content: space-evenly;
     height: 877px;
     h3 {
-        span {
-            @include h3;
-            width: 400px;
-            text-align: center;
-        }
         @include h3;
-        width: 330px;
+        width: 400px;
         text-align: center;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
     }
 }
 

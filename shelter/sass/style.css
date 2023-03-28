@@ -69,7 +69,7 @@ body {
   color: #F1CDB3;
   scroll-behavior: smooth;
 }
-.logo_title:hover {
+.logo_title .logo-href:hover {
   transform: scale(110%);
   transition: background-color 3s, transform 2.5s;
 }
@@ -274,20 +274,6 @@ body {
   height: 877px;
 }
 .petsSection__container h3 {
-  font-family: "Georgia";
-  font-size: 3.5rem;
-  line-height: 4.5rem;
-  letter-spacing: 0.06em;
-  color: #545454;
-  font-style: normal;
-  font-weight: 400;
-  width: 330px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.petsSection__container h3 span {
   font-family: "Georgia";
   font-size: 3.5rem;
   line-height: 4.5rem;
