@@ -26,28 +26,39 @@ body {
     background-color: $color-light-xl;
     font-size: 1.5rem;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(0, 0, 255, 0.363);
+    margin: 0 auto;
 }
 
 //header
     .header {
-        height: 90px;
         background: url('../img/noise-transparent.svg'),
         radial-gradient(110.67% 538.64% at 5.73% 50%, #513d2f 0%, #1a1a1c 100%),
         #211f20;
+        width: 100%;
+        //background: #513d2f;
+        @include media-tablet {
+            background: url('../img/noise-transparent.svg'),
+            radial-gradient(110.67% 538.64% at 5.73% 50%, #513d2f 0%, #1a1a1c 100%),
+            #211f20;
+        }
     }
 
 .header__container {
     display: flex;
-    width: $content-width;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
+    padding: 25px 10px 20px 10px;
+    @include media-tablet {
+    padding: 0;
+    margin: 30px 0;
+    }
 }
 
 
 //logo_title
 .logo_title {
-    padding: 31px 0 1px 1px;
     &:hover {
         transform: scale(110%);
         transition: background-color 3s, transform 2.5s;
