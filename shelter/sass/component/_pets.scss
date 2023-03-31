@@ -20,6 +20,10 @@
     align-items: center;
     justify-content: space-evenly;
     width: 1200px;
+    @include media-tablet {
+        width: 708px;
+        justify-content: space-between;
+    }
 
     .pets-card {
         width: 270px;
@@ -45,6 +49,10 @@
 
         h4 {
             @include h4;
+        }
+
+        &:nth-child(4) {
+            display: none;
         }
     }
 }

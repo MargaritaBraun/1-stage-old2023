@@ -127,6 +127,11 @@ body {
   margin-top: 42px;
   cursor: pointer;
 }
+@media (max-width: 768px) {
+  .button-primary {
+    align-self: center;
+  }
+}
 .button-primary span {
   width: 117px;
   height: 22px;
@@ -273,7 +278,13 @@ body {
   display: flex;
   justify-content: space-between;
   padding-top: 50px;
-  width: 1200px;
+  flex-wrap: wrap;
+}
+@media (max-width: 768px) {
+  .footer__container {
+    justify-content: space-between;
+    padding-top: 30px;
+  }
 }
 
 .footer-contacts {
@@ -363,7 +374,7 @@ body {
   height: 234px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 .locations-block h3 {
@@ -422,4 +433,10 @@ body {
   display: inline-block;
   background-size: contain;
   background-repeat: no-repeat;
+}
+@media (max-width: 768px) {
+  .footer-img__container {
+    padding-top: 65px;
+    margin: 0 auto;
+  }
 }/*# sourceMappingURL=pets-style.css.map */

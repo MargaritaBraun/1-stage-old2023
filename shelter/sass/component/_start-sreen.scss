@@ -1,6 +1,5 @@
 .startScreen {
     background: url('../img/noise-transparent.svg'), radial-gradient(110.67% 538.64% at 5.73% 50%, #513d2f 0%, #1a1a1c 100%), #211f20;
-    background: #513d2f;
 }
 
 .startScreen__container {
@@ -9,12 +8,15 @@
     align-items: center;
     @include media-tablet {
         flex-direction: column;
+        padding-top: 30px;
     }
 }
 
 .startScreen__block {
-    margin: 5px 0px 0px 0px;
     width: 460px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     h2 {
     font-family: 'Georgia';
     font-style: normal;
@@ -34,8 +36,12 @@
 
 .start-screen-puppy {
     align-self: flex-end;
+    max-width: 100%;
     img {
-        max-width: 100%;
-        padding-top: 90px;
+        width: 100%;
+        padding-top: 100px;
+        @include media-tablet {
+            padding-left: 128px;
+        }
     }
 }

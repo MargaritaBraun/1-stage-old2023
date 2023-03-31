@@ -5,7 +5,9 @@
     background-color: $color-button;
     margin-top: 42px;
     cursor: pointer;
-    
+    @include media-tablet {
+        align-self: center;
+    }
     span {
         width: 117px;
         height: 22px;

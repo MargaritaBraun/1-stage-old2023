@@ -1,11 +1,14 @@
 .about__container {
-    height: 408px;
     background-color: $color-light-xl;
     margin: 80px 40px 100px 40px;
     display: flex;
     align-items: flex-start;
     justify-content: space-evenly;
     flex-direction: row;
+    @include media-tablet {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
 }
 
 .about-img {
@@ -14,12 +17,14 @@
 }
 
 .about-block {
-    width: 500px;
-    height: 390px;
     padding-top: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    @include media-tablet {
+        align-items: center;
+        padding-top: 0px;
+    }
 
     h3 {
         @include h3;
@@ -29,5 +34,8 @@
     .about-paragraf {
         @include paragraph-l;
         width: 430px;
+        @include media-tablet {
+            padding-top: 25px;
+        }
     }
 }

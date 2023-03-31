@@ -35,13 +35,6 @@ body {
         background: url('../img/noise-transparent.svg'),
         radial-gradient(110.67% 538.64% at 5.73% 50%, #513d2f 0%, #1a1a1c 100%),
         #211f20;
-        width: 100%;
-        //background: #513d2f;
-        @include media-tablet {
-            background: url('../img/noise-transparent.svg'),
-            radial-gradient(110.67% 538.64% at 5.73% 50%, #513d2f 0%, #1a1a1c 100%),
-            #211f20;
-        }
     }
 
 .header__container {
@@ -51,8 +44,7 @@ body {
     align-items: baseline;
     padding: 25px 10px 20px 10px;
     @include media-tablet {
-    padding: 0;
-    margin: 30px 0;
+    padding: 30px 0;
     }
 }
 
