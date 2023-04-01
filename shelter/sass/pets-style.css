@@ -13,6 +13,12 @@
   max-width: 1200px;
   margin: 0 auto;
 }
+@media (max-width: 768px) {
+  .wrapper {
+    max-width: 708px;
+    margin: 0 auto;
+  }
+}
 
 /* Обнуление */
 *,
@@ -120,6 +126,11 @@ body {
   background-color: #F1CDB3;
   margin-top: 42px;
   cursor: pointer;
+}
+@media (max-width: 768px) {
+  .button-primary {
+    align-self: center;
+  }
 }
 .button-primary span {
   width: 117px;
@@ -267,7 +278,13 @@ body {
   display: flex;
   justify-content: space-between;
   padding-top: 50px;
-  width: 1200px;
+  flex-wrap: wrap;
+}
+@media (max-width: 768px) {
+  .footer__container {
+    justify-content: space-between;
+    padding-top: 30px;
+  }
 }
 
 .footer-contacts {
@@ -316,10 +333,10 @@ body {
   letter-spacing: 0.06em;
   color: #545454;
   color: #F1CDB3;
-  text-decoration: underline;
 }
 .mail-block h4:hover {
   color: #FFFFFF;
+  text-decoration: underline;
 }
 
 .phone-block {
@@ -357,7 +374,7 @@ body {
   height: 234px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 .locations-block h3 {
@@ -417,5 +434,9 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
 }
-
-/*# sourceMappingURL=pets-style.css.map */
+@media (max-width: 768px) {
+  .footer-img__container {
+    padding-top: 65px;
+    margin: 0 auto;
+  }
+}/*# sourceMappingURL=pets-style.css.map */

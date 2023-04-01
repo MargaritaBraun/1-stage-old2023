@@ -1,6 +1,4 @@
 .help__container {
-    width: 1200px;
-    height: 431px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -11,7 +9,10 @@
             width: 320px;
             text-align: center;
             margin: 5px 70px 0px 0px;
-            
+            @include media-tablet {
+                margin: 0px 0px 60px 0px;
+            }
+
         span {
             @include h3;
             width: 308px;
@@ -21,49 +22,81 @@
 }
 
 .help-list {
-        width: 1100px;
-        height: 281px;
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-evenly;
         align-content: space-around;
         flex-wrap: wrap;
-        margin: 5px 70px 0px 0px;
 
         .list-item {
-        width: 175px;
-        height: 160px;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
+        align-content: space-around;
+        flex-wrap: wrap;
+        flex-basis: 20%;
+        padding-bottom: 55px;
 
         .img-list-item {
-            text-align: center
+            text-align: center;
         }
 
         h4 {
             @include h4;
+            padding-top: 30px;
         }
 
+        @include media-tablet {
+            flex-basis: 33%;
+        }
+
+    }
+}
+
+
+    /*
         &:nth-child(6) {
             flex-basis: 23%;
             padding-left: 70px;
+            flex-wrap: wrap;
+            @include media-tablet {
+                flex-basis: 33%;
+                padding-left: 0;
+                padding-top: 55px;
+            }
         }
 
         &:nth-child(7) {
             flex-basis: 20%;
+            flex-wrap: wrap;
+            @include media-tablet {
+                flex-basis: 33%;
+                padding-top: 55px;
+            }
         }
 
         &:nth-child(8) {
             flex-basis: 23%;
+            flex-wrap: wrap;
+            @include media-tablet {
+                flex-basis: 33%;
+                padding-top: 55px;
+            }
         }
 
         &:last-child {
             flex-basis: 23%;
             padding-right: 70px;
+            flex-wrap: wrap;
+            @include media-tablet {
+                flex-basis: 33%;
+                padding-right: 0px;
+                padding-top: 55px;
+            }
         }
 
-    }
-}
+        
+
+        */

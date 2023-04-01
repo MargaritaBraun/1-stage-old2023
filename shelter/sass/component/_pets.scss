@@ -20,6 +20,10 @@
     align-items: center;
     justify-content: space-evenly;
     width: 1200px;
+    @include media-tablet {
+        width: 708px;
+        justify-content: space-between;
+    }
 
     .pets-card {
         width: 270px;
@@ -31,6 +35,8 @@
         align-items: center;
         justify-content: space-around;
         cursor: pointer;
+        @extend %transition;
+        
         &:hover {
             background-color: $color-light-xl;
             box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
@@ -43,6 +49,10 @@
 
         h4 {
             @include h4;
+        }
+
+        &:nth-child(4) {
+            display: none;
         }
     }
 }
