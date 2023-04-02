@@ -19,6 +19,16 @@
     margin: 0 auto;
   }
 }
+@media (max-width: 720px) {
+  .wrapper {
+    width: 100%;
+  }
+}
+@media (max-width: 320px) {
+  .wrapper {
+    max-width: 300px;
+  }
+}
 
 /* Обнуление */
 *,

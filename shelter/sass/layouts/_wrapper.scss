@@ -5,4 +5,10 @@
         max-width: 708px;
         margin: 0 auto;
     }
+    @include appearance-humburger-menu {
+        width: 100%;
+    }
+    @include media-mobilesmall {
+        max-width: 300px;
+    }
 }
