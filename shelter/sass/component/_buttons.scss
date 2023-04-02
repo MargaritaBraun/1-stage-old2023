@@ -44,4 +44,11 @@
     cursor: pointer;
     transition: all .3s;
     margin: 0;
+    @include media-mobile {
+        width: 260px;
+    }
+}
+
+.button-margin {
+    margin: 42px 0 42px 0;
 }

@@ -19,9 +19,19 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    @include media-mobile {
+        align-items: center;
+        padding-bottom: 40px;
+        width: 100%;
+    }
     h3 {
         @include h3;
         color: $color-light-xl;
+        @include media-mobile {
+            font-size: 2.5rem;
+            line-height: 3.2rem;
+            text-align: center;
+    }
     }
 }
 
@@ -53,6 +63,12 @@
             color: $color-light-xl;
             text-decoration: underline;
         }
+        @include media-mobile {
+            font-size: 2.0rem;
+            line-height: 2.3rem;
+            letter-spacing: 0.06em;
+            //text-align: center;
+    }
     }
 }
 
@@ -79,6 +95,11 @@
         &:hover {
             color: $color-light-xl;
         }
+        @include media-mobile {
+            font-size: 2rem;
+            line-height: 2.3rem;
+            letter-spacing: 0.06em;
+    }
     }
 }
 
@@ -89,10 +110,20 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-
+    @include media-mobile {
+        width: 100%;
+        height: 100%;
+    }
     h3 {
         @include h3;
         color: $color-light-xl;
+        @include media-mobile {
+            font-size: 2.5rem;
+            line-height: 3.2rem;
+            text-align: center;
+            letter-spacing: 0.06em;
+            width: 250px;
+    }
     }
 }
 
@@ -102,6 +133,9 @@
     justify-content: flex-start;
     align-items: center;
     width: 302px;
+    @include media-mobile {
+        padding-top: 40px;
+    }
     .icon-block {
         width: 22px;
         height: 32px;
@@ -126,6 +160,11 @@
         &:hover {
             color: $color-light-xl;
         }
+        @include media-mobile {
+            font-size: 2rem;
+            line-height: 2.3rem;
+            letter-spacing: 0.06em;
+    }
     }
 }
 
@@ -137,9 +176,16 @@
             display: inline-block;
             background-size: contain;
             background-repeat: no-repeat;
+            @include media-mobile {
+                width: 260px;
+                height: 269px;
+            }
     }
     @include media-tablet  {
         padding-top: 65px;
         margin: 0 auto;
+    }
+    @include media-mobile {
+        padding-top: 40px;
     }
 }

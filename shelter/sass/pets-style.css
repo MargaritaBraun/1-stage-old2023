@@ -190,6 +190,15 @@ body {
   transition: all 0.3s;
   margin: 0;
 }
+@media (max-width: 425px) {
+  .button-pets-card {
+    width: 260px;
+  }
+}
+
+.button-margin {
+  margin: 42px 0 42px 0;
+}
 
 .our-pets {
   background-color: #F6F6F6;
@@ -304,6 +313,13 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
+@media (max-width: 425px) {
+  .footer-contacts {
+    align-items: center;
+    padding-bottom: 40px;
+    width: 100%;
+  }
+}
 .footer-contacts h3 {
   font-family: "Georgia";
   font-size: 3.5rem;
@@ -313,6 +329,13 @@ body {
   font-style: normal;
   font-weight: 400;
   color: #FFFFFF;
+}
+@media (max-width: 425px) {
+  .footer-contacts h3 {
+    font-size: 2.5rem;
+    line-height: 3.2rem;
+    text-align: center;
+  }
 }
 
 .mail-block {
@@ -348,6 +371,13 @@ body {
   color: #FFFFFF;
   text-decoration: underline;
 }
+@media (max-width: 425px) {
+  .mail-block h4 {
+    font-size: 2rem;
+    line-height: 2.3rem;
+    letter-spacing: 0.06em;
+  }
+}
 
 .phone-block {
   width: 239px;
@@ -378,6 +408,13 @@ body {
 .phone-block h4:hover {
   color: #FFFFFF;
 }
+@media (max-width: 425px) {
+  .phone-block h4 {
+    font-size: 2rem;
+    line-height: 2.3rem;
+    letter-spacing: 0.06em;
+  }
+}
 
 .locations-block {
   width: 302px;
@@ -386,6 +423,12 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+}
+@media (max-width: 425px) {
+  .locations-block {
+    width: 100%;
+    height: 100%;
+  }
 }
 .locations-block h3 {
   font-family: "Georgia";
@@ -397,6 +440,15 @@ body {
   font-weight: 400;
   color: #FFFFFF;
 }
+@media (max-width: 425px) {
+  .locations-block h3 {
+    font-size: 2.5rem;
+    line-height: 3.2rem;
+    text-align: center;
+    letter-spacing: 0.06em;
+    width: 250px;
+  }
+}
 
 .adress-location {
   display: flex;
@@ -404,6 +456,11 @@ body {
   justify-content: flex-start;
   align-items: center;
   width: 302px;
+}
+@media (max-width: 425px) {
+  .adress-location {
+    padding-top: 40px;
+  }
 }
 .adress-location .icon-block {
   width: 22px;
@@ -435,6 +492,13 @@ body {
 .adress-location h4:hover {
   color: #FFFFFF;
 }
+@media (max-width: 425px) {
+  .adress-location h4 {
+    font-size: 2rem;
+    line-height: 2.3rem;
+    letter-spacing: 0.06em;
+  }
+}
 
 .footer-img__container .footer-img {
   background-image: url("../img/footer-puppy.png");
@@ -444,9 +508,20 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
 }
+@media (max-width: 425px) {
+  .footer-img__container .footer-img {
+    width: 260px;
+    height: 269px;
+  }
+}
 @media (max-width: 768px) {
   .footer-img__container {
     padding-top: 65px;
     margin: 0 auto;
+  }
+}
+@media (max-width: 425px) {
+  .footer-img__container {
+    padding-top: 40px;
   }
 }/*# sourceMappingURL=pets-style.css.map */
