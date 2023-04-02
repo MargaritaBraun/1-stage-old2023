@@ -3,7 +3,7 @@
     position: absolute;
     width: 100%;
     height: 2px;
-    background: black;
+    background: $color-primary;
     content: "";
 }
 
@@ -12,9 +12,16 @@
     width: 32px;
     height: 30px;
     position: relative;
-    @include media-mobile {
-        display: inline-block;
+    z-index: 5;
+    transition: all .5s ease-out;
+    &.active {
+        transform: rotate(90deg);
     }
+
+    @include appearance-humburger-menu {
+        display: block;
+    }
+
     &::before {
         @extend %burger-line;
         top: 0;
@@ -25,6 +32,73 @@
         @extend %burger-line;
         bottom: 0;
         left: 0;
+    }
+}
+
+.nav-menu {
+    @include appearance-humburger-menu {
+        //display: none;
+        position: absolute;
+        top: 0;
+        right: -100%;
+        height: 100vh;
+        width: 90%;
+        background-color: $color-dark-3xl;
+        display: flex;
+        transition: all .5s ease-out;
+        justify-content: center;
+        overflow: hidden;
+        &.active {
+            right: 0;
+            overflow: hidden;
+        }
+    }
+    
+}
+
+.nav-panel {
+    @include appearance-humburger-menu {
+        flex-direction: column;
+        padding: 90px;
+        gap: 0;
+        //justify-content: space-between;
+        align-items: center;
+    }
+
+    @include media-mobilesmall {
+        padding: 20px;
+        justify-content: space-evenly;
+    }
+}
+
+.item-menu {
+    a {
+        @include appearance-humburger-menu {
+            line-height: 5.1rem;
+            font-size: 3.2rem;
+            color: $color-dark-s;
+            &:active {
+                border-bottom: 3px solid $item-menu-active;
+                color: $item-menu-active;
+            }
+        }
+
+    }
+    .item-active {
+        @include appearance-humburger-menu {
+            color: $item-menu-active;
+        }
+    }
+}
+
+
+
+
+.header__container {
+    @include appearance-humburger-menu {
+        padding: 30px 20px 0 20px;
+        align-items: center;
+        justify-content: space-between;
     }
 }
 

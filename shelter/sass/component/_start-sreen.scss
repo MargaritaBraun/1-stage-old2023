@@ -10,6 +10,10 @@
         flex-direction: column;
         padding-top: 30px;
     }
+
+    @include media-mobile {
+        padding-top: 60px;
+    }
 }
 
 .startScreen__block {
@@ -17,6 +21,11 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    @include appearance-humburger-menu {
+        width: 100%;
+        align-items: center;
+    }
+
     h2 {
     font-family: 'Georgia';
     font-style: normal;
@@ -25,6 +34,19 @@
     line-height: 5.7rem;
     color: $color-light-xl;
     width: 310px;
+    letter-spacing: 0.06em;
+    @include appearance-humburger-menu {
+        text-align: center;
+    }
+
+    @include media-mobile {
+        font-size: 2.5rem;
+        line-height: 3.2rem;
+    }
+
+    @include media-mobilesmall {
+        width: 250px;
+    }
     }
 }
 
@@ -32,6 +54,18 @@
     @include paragraph-l;
     margin-top: 42px;
     color: $color-dark-s;
+    @include appearance-humburger-menu {
+        padding: 0 100px;
+        text-align: center;
+    }
+    @include media-mobile {
+        padding: 0 10px;
+        font-size: 1.5rem;
+        line-height: 2.4rem;
+    }
+    @include media-mobilesmall {
+        padding: 0;
+    }
 }
 
 .start-screen-puppy {
@@ -42,6 +76,10 @@
         padding-top: 100px;
         @include media-tablet {
             padding-left: 128px;
+        }
+        @include media-mobile {
+            width: 100%;
+            padding: 105px 0 0 40px;
         }
     }
 }

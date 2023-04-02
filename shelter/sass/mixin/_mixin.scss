@@ -39,6 +39,10 @@ color: $color-dark-l;
         @media (max-width: $tablet-width) { @content;}
 }
 
+@mixin appearance-humburger-menu {
+        @media (max-width: $appearance-humburger-menu-width) { @content;}
+}
+
 @mixin media-mobile {
         @media (max-width: $mobile-big-width) { @content;}
 }
