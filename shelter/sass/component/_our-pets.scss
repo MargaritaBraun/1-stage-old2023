@@ -11,6 +11,12 @@
         @include h3;
         padding: 80px 0 30px 0;
         text-align: center;
+        @include media-mobile {
+            font-size: 2.5rem;
+            line-height: 3.2rem;
+            width: 100%;
+            padding: 42px 0 0 0;
+        }
     }
 }
 
@@ -19,6 +25,9 @@
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+    @include media-mobile {
+        justify-content: center;
+    }
     .our-pets-card {
         width: 270px;
         height: 435px;
@@ -36,7 +45,29 @@
             box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
             transform: scale(105%);
             transition: background-color 3s, transform 2.5s;
-    }
+        }
+
+        @include media-tablet {
+            &:nth-child(7) {
+                display: none;
+            }
+            &:nth-child(8) {
+                display: none;
+            }
+        }
+        
+        @include media-mobile {
+            margin: 42px 10px 13px 10px;
+            &:nth-child(4) {
+                display: none;
+            }
+            &:nth-child(5) {
+                display: none;
+            }
+            &:nth-child(6) {
+                display: none;
+            }
+        }
     }
 
     h4 {
@@ -49,6 +80,10 @@
     width: 381px;
     padding: 30px 0 100px 0;
     margin: 0 auto;
+    @include media-mobile {
+        padding: 42px 0 42px 0;
+        width: 100%;
+    }
 }
 .navigation__container {
     display: flex;

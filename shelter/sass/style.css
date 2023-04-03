@@ -146,6 +146,17 @@ body {
   content: "";
 }
 
+.line-black {
+  background: #000000;
+}
+
+.black::before {
+  background: #000000;
+}
+.black::after {
+  background: #000000;
+}
+
 .burger__container {
   display: none;
   width: 32px;
@@ -224,7 +235,7 @@ body {
 
 @media (max-width: 720px) {
   .header__container {
-    padding: 30px 20px 0 20px;
+    padding: 30px 10px 20px 10px;
     align-items: center;
     justify-content: space-between;
   }
@@ -674,7 +685,7 @@ body {
   font-weight: 400;
   width: 320px;
   text-align: center;
-  margin: 5px 70px 0px 0px;
+  margin: 5px 70px 50px 0px;
 }
 @media (max-width: 768px) {
   .help__container h3 {
@@ -1188,4 +1199,6 @@ body {
   .footer-img__container {
     padding-top: 40px;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */

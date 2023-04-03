@@ -7,6 +7,19 @@
     content: "";
 }
 
+.line-black {
+    background: #000000;
+}
+
+.black {
+    &::before {
+        background: #000000;
+    }
+    &::after {
+        background: #000000;
+    }
+}
+
 .burger__container {
     display: none;
     width: 32px;
@@ -95,7 +108,7 @@
 
 .header__container {
     @include appearance-humburger-menu {
-        padding: 30px 20px 0 20px;
+        padding: 30px 10px 20px 10px;
         align-items: center;
         justify-content: space-between;
     }
