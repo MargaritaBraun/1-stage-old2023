@@ -66,7 +66,7 @@
     .about-paragraf {
         @include paragraph-l;
         width: 430px;
-        
+        padding-top: 25px;
         @include media-tablet {
             color: $color-dark-xl;
         }

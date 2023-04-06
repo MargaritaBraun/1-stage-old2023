@@ -6,6 +6,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    max-height: 813px;
     @include media-tablet {
         flex-direction: column;
         padding-top: 30px;
@@ -33,7 +34,6 @@
     font-size: 4.4rem;
     line-height: 5.7rem;
     color: $color-light-xl;
-    width: 310px;
     letter-spacing: 0.06em;
     @include appearance-humburger-menu {
         text-align: center;
@@ -70,12 +70,14 @@
 
 .start-screen-puppy {
     align-self: flex-end;
-    max-width: 100%;
+    max-width: 90%;
+    padding-left: 40px;
     img {
         width: 100%;
         padding-top: 100px;
         @include media-tablet {
-            padding-left: 128px;
+            padding-top: 20px;
+            width: 70%;
         }
         @include media-mobile {
             width: 100%;
