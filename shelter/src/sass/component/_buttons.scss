@@ -15,7 +15,7 @@
     }
     &:hover {
         background-color: $color-button-active;
-        transform: scale(105%);
+        transform: scale(90%);
         transition: background-color 3s, transform 2.5s;
     }
 }

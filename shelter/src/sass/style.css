@@ -272,7 +272,7 @@ body {
 }
 .button-primary:hover {
   background-color: #FDDCC4;
-  transform: scale(105%);
+  transform: scale(90%);
   transition: background-color 3s, transform 2.5s;
 }
 
@@ -1040,7 +1040,7 @@ body {
   color: #FFFFFF;
 }
 .mail-block .mail-icon {
-  background-image: url("/img/icon-email.svg");
+  background-image: url("../img/icon-email.svg");
   width: 40px;
   height: 32px;
   background-size: contain;
@@ -1079,7 +1079,7 @@ body {
   cursor: pointer;
 }
 .phone-block .phone-icon {
-  background-image: url("/img/icon-phone.svg");
+  background-image: url("../img/icon-phone.svg");
   width: 40px;
   height: 32px;
   background-size: contain;
@@ -1214,6 +1214,4 @@ body {
   .footer-img__container {
     padding-top: 40px;
   }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
