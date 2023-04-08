@@ -1040,7 +1040,7 @@ body {
   color: #FFFFFF;
 }
 .mail-block .mail-icon {
-  background-image: url("../img/icon-email.svg");
+  background-image: url("/img/icon-email.svg");
   width: 40px;
   height: 32px;
   background-size: contain;
@@ -1079,7 +1079,7 @@ body {
   cursor: pointer;
 }
 .phone-block .phone-icon {
-  background-image: url("../img/icon-phone.svg");
+  background-image: url("/img/icon-phone.svg");
   width: 40px;
   height: 32px;
   background-size: contain;
