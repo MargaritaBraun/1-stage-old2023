@@ -275,7 +275,7 @@ body {
 .button-primary:hover {
   background-color: #FDDCC4;
   transform: scale(90%);
-  transition: background-color 3s, transform 2.5s;
+  transition: background-color 3s;
 }
 
 .button_secondary {
@@ -288,8 +288,6 @@ body {
 }
 .button_secondary:hover {
   background-color: #FDDCC4;
-  transform: scale(85%);
-  transition: background-color 3s, transform 2.5s;
 }
 .button_secondary span {
   font-family: "Georgia";

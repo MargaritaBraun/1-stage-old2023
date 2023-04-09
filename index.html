@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="shelter/src/sass/style.css">
-    <link rel="icon" href="shelter/img/favicon-pets.png">
+    <link rel="icon" href="shelter/src/img/favicon-pets.png">
     <title>Shelter</title>
 </head>
 <body>
@@ -30,7 +30,7 @@
             </div>
         </div>
     </header>
-   <main>
+   <>
     <section class="startScreen">
         <div class="wrapper">
             <div class="startScreen__container">
@@ -67,24 +67,62 @@
         <div class="wrapper">
             <div class="petsSection__container">
                 <h3>Our friends who <br>are looking for a house</h3>
+                <div class="modal" id="myModal">
+                    <div class="modal-content">
+                        <span class="modal-close">&times;</span>
+                        <div class="modal-img"><img src="shelter/src/img/our-pets-cards/sofi.png" alt="img-pets-card" class="img-pets-card"></div>
+                        <div class="modai-block">
+                           <h3 class="title-modal">Jennifer</h3>
+                           <h4>Dog - Labrador</h4>
+                           <h5></h5>
+                        </div>
+                      </div>
+                </div>
                 <div class="slider">
+                    <div class="slider-cards">
+                        <div class="pets-card">
+                            <img src="shelter/src/img/pets-katrine.png" alt="Katrine" class="img-pets-card">
+                            <h4 class="pets-card-title">Katrine</h4>
+                            <button class="button_secondary btn-modal" id="btn-modal"><span>Learn more</span></button>
+                        </div>
+                        <div class="pets-card">
+                            <img src="shelter/src/img/pets-jennifer.png" alt="Jennifer" class="img-pets-card">
+                            <h4 class="pets-card-title">Jennifer</h4>
+                            <button class="button_secondary btn-modal" id="btn-modal"><span>Learn more</span></button>
+                        </div>
+                        <div class="pets-card">
+                            <img src="shelter/src/img/pets-woody.png" alt="Woody" class="img-pets-card">
+                            <h4 class="pets-card-title">Woody</h4>
+                            <button class="button_secondary btn-modal" id="btn-modal"><span>Learn more</span></button>
+                        </div>
+                        <div class="pets-card">
+                            <img src="shelter/src/img/our-pets-cards/sofi.png" alt="Sophia" class="img-pets-card">
+                            <h4 class="pets-card-title">Sophia</h4>
+                            <button class="button_secondary btn-modal" id="btn-modal"><span>Learn more</span></button>
+                        </div>
+                        <div class="pets-card">
+                            <img src="shelter/src/img/our-pets-cards/pets-timmy.png" alt="Timmy" class="img-pets-card">
+                            <h4 class="pets-card-title">Timmy</h4>
+                            <button class="button_secondary btn-modal" id="btn-modal"><span>Learn more</span></button>
+                        </div>
+                        <div class="pets-card">
+                            <img src="shelter/src/img/our-pets-cards/pets-charly.png" alt="Charly" class="img-pets-card">
+                            <h4 class="pets-card-title">Charly</h4>
+                            <button class="button_secondary btn-modal" id="btn-modal"><span>Learn more</span></button>
+                        </div>
+                        <div class="pets-card">
+                            <img src="shelter/src/img/our-pets-cards/pets-scarlet.png" alt="Scarlett" class="img-pets-card">
+                            <h4 class="pets-card-title">Scarlett</h4>
+                            <button class="button_secondary btn-modal" id="btn-modal"><span>Learn more</span></button>
+                        </div>
+                        <div class="pets-card">
+                            <img src="shelter/src/img/our-pets-cards/pets-freddie.png" alt="Freddie" class="img-pets-card">
+                            <h4 class="pets-card-title">Freddie</h4>
+                            <button class="button_secondary btn-modal" id="btn-modal"><span>Learn more</span></button>
+                        </div>
+                    </div>
                     <div class="left-arrow">
                         <object type="image/svg+xml" data="shelter/src/img/button_arrow.svg" class="left-arrow-icon"></object>
-                    </div>
-                    <div class="pets-card">
-                        <img src="shelter/src/img/pets-katrine.png" alt="Katrine" class="img-pets-card">
-                        <h4 class="pets-card-title">Katrine</h4>
-                        <button class="button_secondary"><span>Learn more</span></button>
-                    </div>
-                    <div class="pets-card">
-                        <img src="shelter/src/img/pets-jennifer.png" alt="Jennifer" class="img-pets-card">
-                        <h4 class="pets-card-title">Jennifer</h4>
-                        <button class="button_secondary"><span>Learn more</span></button>
-                    </div>
-                    <div class="pets-card">
-                        <img src="shelter/src/img/pets-woody.png" alt="Woody" class="img-pets-card">
-                        <h4 class="pets-card-title">Woody</h4>
-                        <button class="button_secondary"><span>Learn more</span></button>
                     </div>
                     <div class="right-arrow">
                         <object type="image/svg+xml" data="shelter/src/img/button_arrow.svg" class="right-arrow-icon"></object>
@@ -192,8 +230,8 @@
             </div>
         </div>
     </section>
-    <script src="shelter/src/index.js"></script>
-    <script src="script.js"></script>
+    <script src="shelter/src/js/index.js"></script>
+    <script src="shelter/src/js/modal1.js"></script>
    </main>
 </body>
 </html>
