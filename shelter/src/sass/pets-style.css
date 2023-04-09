@@ -274,8 +274,8 @@ body {
 }
 .button-primary:hover {
   background-color: #FDDCC4;
-  transform: scale(105%);
-  transition: background-color 3s, transform 2.5s;
+  transform: scale(90%);
+  transition: background-color 3s;
 }
 
 .button_secondary {
@@ -288,8 +288,6 @@ body {
 }
 .button_secondary:hover {
   background-color: #FDDCC4;
-  transform: scale(85%);
-  transition: background-color 3s, transform 2.5s;
 }
 .button_secondary span {
   font-family: "Georgia";
@@ -684,6 +682,4 @@ body {
   .footer-img__container {
     padding-top: 40px;
   }
-}
-
-/*# sourceMappingURL=pets-style.css.map */
+}/*# sourceMappingURL=pets-style.css.map */

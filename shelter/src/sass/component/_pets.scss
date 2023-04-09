@@ -15,7 +15,7 @@
         @include h3;
         width: 400px;
         text-align: center;
-        padding-top: 32px;
+        padding: 32px 0;
         @include media-tablet {
             margin-top: 30px;
         }
@@ -29,14 +29,63 @@
     }
 }
 
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    &.active {
+        display: block;
+    }
+}
+
+.modal-content {
+    background-color: aqua;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    display: flex;
+}
+.modal-img {
+    width: 500px;
+    height: 500px;
+    background-color: blue;
+}
+
+.modal-close {
+    color: rgb(24, 21, 21);
+    position: absolute;
+    top: calc(50% - 50px);
+    right: calc(10% - 10px);
+    font-size: 28px;
+    font-weight: bold;
+    &:hover {
+        color: black;
+    text-decoration: none;
+    cursor: pointer;
+    }
+    &:focus {
+        color: black;
+    text-decoration: none;
+    cursor: pointer;
+    }
+  }
+
 .slider {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     align-content: space-between;
-    max-width: 100%;
+    width: 100%;
     flex-wrap: wrap;
     gap: 65px;
+    overflow: hidden;
     @include media-tablet {
        max-width: 708px;
         justify-content: space-between;
@@ -46,6 +95,12 @@
         max-width: 300px;
         align-content: space-between;
         gap: 0;
+    }
+
+    .slider-cards {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
 
     .pets-card {
@@ -60,7 +115,9 @@
         align-content: space-between;
         cursor: pointer;
         transition: all .3c ease-out;
-        @include media-tablet {
+        overflow: hidden;
+
+       @include media-tablet {
             &:nth-child(4) {
                 display: none;
             }
@@ -75,8 +132,6 @@
         &:hover {
             background-color: $color-light-xl;
             box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
-            transform: scale(105%);
-            transition: background-color 3s, transform 2.5s;
         }
         .img-pets-card {
             border-radius: 9px 9px 0px 0px;
