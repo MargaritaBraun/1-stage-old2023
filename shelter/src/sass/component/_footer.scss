@@ -1,0 +1,198 @@
+.footer {
+    background: url('../img/noise-transparent.svg'), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    flex-wrap: wrap;
+    @include media-tablet  {
+        justify-content: space-between;
+        padding-top: 30px;
+    }
+}
+
+.footer-contacts {
+    width: 305px;
+    height: 234px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @include media-mobile {
+        align-items: center;
+        padding-bottom: 40px;
+        width: 100%;
+    }
+    h3 {
+        @include h3;
+        color: $color-light-xl;
+        @include media-mobile {
+            font-size: 2.5rem;
+            line-height: 3.2rem;
+            text-align: center;
+    }
+    }
+}
+
+.mail-block {
+    width: 251px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+
+    &:focus {
+        color: $color-light-xl;
+    }
+
+    .mail-icon {
+        background-image: url('../img/icon-email.svg');
+        width: 100%;
+        height: 32px;
+        background-size: contain;
+        display: inline-block;
+        background-repeat: no-repeat;
+        //padding-right: 20px;
+    }
+
+    h4 {
+        @include h4;
+        color: $color-primary;
+        width: 100%;
+        padding-left: 50px;
+        &:hover {
+            color: $color-light-xl;
+            text-decoration: underline;
+        }
+        @include media-mobile {
+            font-size: 2.0rem;
+            line-height: 2.3rem;
+            letter-spacing: 0.06em;
+            //text-align: center;
+    }
+    }
+}
+
+.phone-block {
+    width: 239px;
+    height: 32px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+
+    .phone-icon {
+        background-image: url('../img/icon-phone.svg');
+        width: 100%;
+        height: 32px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    h4 {
+        @include h4;
+        color: $color-primary;
+        margin-left: 50px;
+        &:hover {
+            color: $color-light-xl;
+        }
+        @include media-mobile {
+            font-size: 2rem;
+            line-height: 2.3rem;
+            letter-spacing: 0.06em;
+    }
+    }
+}
+
+.locations-block {
+    width: 302px;
+    height: 234px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    @include media-mobile {
+        width: 100%;
+        height: 100%;
+    }
+    h3 {
+        @include h3;
+        color: $color-light-xl;
+        @include media-mobile {
+            font-size: 2.5rem;
+            line-height: 3.2rem;
+            text-align: center;
+            letter-spacing: 0.06em;
+            width: 100%;
+    }
+    }
+}
+
+.adress-location {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    @include media-mobile {
+        padding-top: 40px;
+    }
+    .icon-block {
+        width: 22px;
+        height: 32px;
+        
+        .location-icon {
+            background-image: url('../img/icon-marker.svg');
+            width: 22px;
+            height: 32px;
+            display: inline-block;
+            background-size: contain;
+            background-repeat: no-repeat;
+
+            &:hover {
+                transform: scale(120%);
+                transition: background-color 3s, transform 2.5s;
+            }
+        }
+    }
+
+    h4 {
+        @include h4;
+        color: $color-primary;
+        margin-left: 40px;
+        width: 300px;
+        &:hover {
+            color: $color-light-xl;
+        }
+        @include media-mobile {
+            font-size: 2rem;
+            line-height: 2.3rem;
+            letter-spacing: 0.06em;
+    }
+    }
+}
+
+.footer-img__container {
+    .footer-img {
+            background-image: url('../img/footer-puppy.png');
+            width: 300px;
+            height: 310px;
+            display: inline-block;
+            background-size: contain;
+            background-repeat: no-repeat;
+            @include media-mobile {
+                width: 260px;
+                height: 269px;
+            }
+    }
+    @include media-tablet  {
+        padding-top: 65px;
+        margin: 0 auto;
+    }
+    @include media-mobile {
+        padding-top: 40px;
+    }
+}
