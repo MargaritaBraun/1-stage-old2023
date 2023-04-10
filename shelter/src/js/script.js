@@ -1,4 +1,4 @@
-import cards from "./cards";
+//import cards from "./cards";
 const hamburger = document.querySelector('.burger__container');
 const navMenu = document.querySelector('.nav-menu');
 

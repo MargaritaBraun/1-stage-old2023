@@ -1,4 +1,4 @@
-//import { cards } from 'shelter\src\cards.js'
+//import { cards } from '.cards'
 const modalWindow = document.getElementById('myModal');
 let petscardmodalimg = document.querySelector('.modal-img');
 //console.log(modalWindow);

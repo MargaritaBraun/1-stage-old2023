@@ -1,4 +1,10 @@
-import { cards } from 'shelter\src\cards.js'
+export class Article {
+    
+}
+
+
+//import { cards } from 'shelter\src\cards.js'
+/*
 const BODY = document.querySelector('body');
 const modalWindow = document.getElementById('myModal');
 
@@ -42,3 +48,4 @@ function setDataForModal(e) {
         }
     })
 }
+*/
