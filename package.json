@@ -2,7 +2,7 @@
   "name": "shelter-task",
   "version": "1.0.0",
   "description": "https://rolling-scopes-school.github.io/margaritabraun-JSFE2023Q1/shelter/",
-  "main": "modal.js",
+  "main": "index.js",
   "scripts": {
     "build": "webpack --mode production",
     "dev": "webpack-dev-server --mode development",
