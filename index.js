@@ -1,4 +1,5 @@
-import  Article  from "./src/js/Article";
+import  { Article } from "./src/js/Article";
+import  { Hamburger } from "./src/js/Hamburger";
 
 const data = [
     {
@@ -170,7 +171,7 @@ const data = [
     }
 
   window.onload = function() {
-    console.log('Hello Rss');
+    console.log(data);
 
     if(data) {
         renderArticlesToDom();
@@ -196,5 +197,6 @@ const data = [
     });
     return articles;
   }
-
-  export default  generateArticle;
+  console.log('Tttt');
+  
+  //export default  generateArticle;

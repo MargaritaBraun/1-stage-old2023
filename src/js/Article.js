@@ -1,5 +1,5 @@
 ///const exports = require("webpack");
-export default  generateArticle;
+
 export class Article {
     constructor({ id, name, img, type, breed, description, age, inoculations, diseases, parasites}) {
         this.id = id;
@@ -53,3 +53,4 @@ export class Article {
     
 }
 
+//export default  generateArticle;

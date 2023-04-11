@@ -1,41 +1,12 @@
 const path = require('path');
-const webpack = require('webpack');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-
 module.exports = {
-    
-    entry: './index.js',
+    entry: "./index.js",
+    mode: 'development',
     output: {
-        path: path.resolve(__dirname, 'dist'),
-        filename: 'main.js'
+      filename: "main.js"
+    },
+
+    watchOptions: {
+        aggregateTimeout: 600,
       },
-
-      mode: 'development',
-      plugins: [new HtmlWebpackPlugin()],
-      module: {
-        rules: [
-          {
-            test: /\.css$/,
-            use: [
-              {
-                loader: 'css-loader',
-                options: {
-                  modules: true,
-                }
-              }
-            ]
-          },
-
-          {
-            test: /\.svg$/,
-            loader: 'svg-inline-loader?classPrefix'
-          },
-          {
-            test: /\.css$/i,
-            use: [MiniCssExtractPlugin.loader, "css-loader"],
-          },
-        ]
-      }
   }
