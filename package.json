@@ -1,26 +1,16 @@
 {
-  "name": "shelter-task",
-  "version": "1.0.0",
+  "name": "margaritabraun-jsfe2023q1",
   "description": "https://rolling-scopes-school.github.io/margaritabraun-JSFE2023Q1/shelter/",
+  "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --mode production",
-    "dev": "webpack-dev-server --mode development",
-    "build:prod": "webpack --config webpack.prod.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/MargaritaBraun/shelter-task.git"
-  },
+  "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/MargaritaBraun/shelter-task/issues"
-  },
-  "homepage": "https://github.com/MargaritaBraun/shelter-task#readme",
   "devDependencies": {
     "webpack": "^5.78.0",
-    "webpack-cli": "^5.0.1",
-    "webpack-dev-server": "^4.13.2"
+    "webpack-cli": "^5.0.1"
   }
 }

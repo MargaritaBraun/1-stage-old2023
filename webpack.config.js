@@ -1,26 +1,12 @@
 const path = require('path');
-
 module.exports = {
-    
-    entry: './index.js',
+    entry: "./index.js",
+    mode: 'development',
     output: {
-        path: path.resolve(__dirname, 'dist'),
-        filename: 'main.js'
-      },
+      filename: "main.js"
+    },
 
-      module: {
-        rules: [
-          {
-            test: /\.css$/,
-            use: [
-              {
-                loader: 'css-loader',
-                options: {
-                  modules: true
-                }
-              }
-            ]
-          }
-        ]
-      }
+    watchOptions: {
+        aggregateTimeout: 600,
+      },
   }
