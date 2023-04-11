@@ -65,65 +65,69 @@
     <section class="pets__section" id="ourPets">
         <div class="wrapper">
             <div class="petsSection__container">
-                <h3>Our friends who <br>are looking for a house</h3>
+                <h3 class="title-pets">Our friends who <br>are looking for a house</h3>
                 <div class="modal" id="myModal">
-                    <div class="modal-content">
-                        <div class="modal-close">
+                    <div class="modal-close">
                         <img src="src/img/modal_close_button.svg" alt="modal_close_button" class="modal-close-button">
                         </div>
-                        <div class="modal-img"><img src="src/img/our-pets-cards/sofi.png" alt="img-pets-card" class="img-pets-card"></div>
-                        <div class="modai-block">
+                    <div class="modal-content">
+                        <div class="modal-img">
+                            <img src="src/img/our-pets-cards/sofi.png" alt="img-pets-card" class="img-pets-card-modal">
+                        </div>
+                                <div class="modal-block">
                            <h3 class="title-modal">Jennifer</h3>
                            <h4 class="type-modal"><span>Dog</span> - <span>Labrador</span></h4>
                            <p class="description-modal">text</p>
-                           <p class="age-modal options"><span class="title-options">Age: </span>2 months</p>
-                           <div class="inoculations-modal options"><span class="title-options">Inoculations:</span>none</div>
-                           <p class="diseases-modal options"><span class="title-options">Diseases:</span><span>none</span></p>
-                           <p class="parasites-modal options"><span class="title-options">Parasites:</span><span>none</span></p>
+                           <ul class="list-modal">
+                            <li class="age-modal options"><span class="title-options">Age: </span>2 months</li>
+                           <li class="inoculations-modal options"><span class="title-options">Inoculations:</span>none</li>
+                           <li class="diseases-modal options"><span class="title-options">Diseases:</span><span>none</span></li>
+                           <li class="parasites-modal options"><span class="title-options">Parasites:</span><span>none</span></li>
+                           </ul>
                         </div>
                       </div>
                 </div>
                 <div class="slider">
                     <div class="slider-cards">
-                        <div class="pets-card">
+                        <div class="pets-card" data-id="5">
                             <img src="src/img/pets-katrine.png" alt="Katrine" class="img-pets-card">
                             <h4 class="pets-card-title">Katrine</h4>
-                            <button class="button_secondary btn-modal" id="btn-modal"><span>Learn more</span></button>
+                            <button class="button_secondary btn-modal"><span>Learn more</span></button>
                         </div>
-                        <div class="pets-card">
+                        <div class="pets-card" data-id="1">
                             <img src="src/img/pets-jennifer.png" alt="Jennifer" class="img-pets-card">
                             <h4 class="pets-card-title">Jennifer</h4>
-                            <button class="button_secondary btn-modal" id="btn-modal"><span>Learn more</span></button>
+                            <button class="button_secondary btn-modal"><span>Learn more</span></button>
                         </div>
-                        <div class="pets-card">
+                        <div class="pets-card" data-id="3">
                             <img src="src/img/pets-woody.png" alt="Woody" class="img-pets-card">
                             <h4 class="pets-card-title">Woody</h4>
-                            <button class="button_secondary btn-modal" id="btn-modal"><span>Learn more</span></button>
+                            <button class="button_secondary btn-modal"><span>Learn more</span></button>
                         </div>
-                        <div class="pets-card">
+                        <div class="pets-card" data-id="2">
                             <img src="src/img/our-pets-cards/sofi.png" alt="Sophia" class="img-pets-card">
                             <h4 class="pets-card-title">Sophia</h4>
-                            <button class="button_secondary btn-modal" id="btn-modal"><span>Learn more</span></button>
+                            <button class="button_secondary btn-modal"><span>Learn more</span></button>
                         </div>
-                        <div class="pets-card">
+                        <div class="pets-card" data-id="6">
                             <img src="src/img/our-pets-cards/pets-timmy.png" alt="Timmy" class="img-pets-card">
                             <h4 class="pets-card-title">Timmy</h4>
-                            <button class="button_secondary btn-modal" id="btn-modal"><span>Learn more</span></button>
+                            <button class="button_secondary btn-modal"><span>Learn more</span></button>
                         </div>
-                        <div class="pets-card">
+                        <div class="pets-card" data-id="8">
                             <img src="src/img/our-pets-cards/pets-charly.png" alt="Charly" class="img-pets-card">
                             <h4 class="pets-card-title">Charly</h4>
-                            <button class="button_secondary btn-modal" id="btn-modal"><span>Learn more</span></button>
+                            <button class="button_secondary btn-modal"><span>Learn more</span></button>
                         </div>
-                        <div class="pets-card">
+                        <div class="pets-card" data-id="4">
                             <img src="src/img/our-pets-cards/pets-scarlet.png" alt="Scarlett" class="img-pets-card">
                             <h4 class="pets-card-title">Scarlett</h4>
-                            <button class="button_secondary btn-modal" id="btn-modal"><span>Learn more</span></button>
+                            <button class="button_secondary btn-modal"><span>Learn more</span></button>
                         </div>
-                        <div class="pets-card">
+                        <div class="pets-card" data-id="7">
                             <img src="src/img/our-pets-cards/pets-freddie.png" alt="Freddie" class="img-pets-card">
                             <h4 class="pets-card-title">Freddie</h4>
-                            <button class="button_secondary btn-modal" id="btn-modal"><span>Learn more</span></button>
+                            <button class="button_secondary btn-modal"><span>Learn more</span></button>
                         </div>
                     </div>
                     <div class="left-arrow">
