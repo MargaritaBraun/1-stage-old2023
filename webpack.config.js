@@ -1,4 +1,8 @@
 const path = require('path');
+const webpack = require('webpack');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     
@@ -8,6 +12,8 @@ module.exports = {
         filename: 'main.js'
       },
 
+      mode: 'development',
+      plugins: [new HtmlWebpackPlugin()],
       module: {
         rules: [
           {
@@ -16,11 +22,20 @@ module.exports = {
               {
                 loader: 'css-loader',
                 options: {
-                  modules: true
+                  modules: true,
                 }
               }
             ]
-          }
+          },
+
+          {
+            test: /\.svg$/,
+            loader: 'svg-inline-loader?classPrefix'
+          },
+          {
+            test: /\.css$/i,
+            use: [MiniCssExtractPlugin.loader, "css-loader"],
+          },
         ]
       }
   }

@@ -6,7 +6,8 @@
   "scripts": {
     "build": "webpack --mode production",
     "dev": "webpack-dev-server --mode development",
-    "build:prod": "webpack --config webpack.prod.js"
+    "build:prod": "webpack --config webpack.prod.js",
+    "watch": "webpack --watch"
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,11 @@
   },
   "homepage": "https://github.com/MargaritaBraun/shelter-task#readme",
   "devDependencies": {
+    "css-loader": "^6.7.3",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.7.5",
+    "style-loader": "^3.3.2",
+    "svg-inline-loader": "^0.8.2",
     "webpack": "^5.78.0",
     "webpack-cli": "^5.0.1",
     "webpack-dev-server": "^4.13.2"
