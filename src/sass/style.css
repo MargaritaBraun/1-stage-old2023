@@ -553,7 +553,8 @@ body {
     height: 100%;
   }
 }
-.petsSection__container h3 {
+
+.title-pets {
   font-family: "Georgia";
   font-size: 3.5rem;
   line-height: 4.5rem;
@@ -566,12 +567,12 @@ body {
   padding: 32px 0;
 }
 @media (max-width: 768px) {
-  .petsSection__container h3 {
+  .title-pets {
     margin-top: 30px;
   }
 }
 @media (max-width: 425px) {
-  .petsSection__container h3 {
+  .title-pets {
     font-size: 2.5rem;
     line-height: 3.2rem;
     width: 100%;
@@ -595,10 +596,14 @@ body {
   display: block;
 }
 
+.modal body.active {
+  overflow: hidden;
+}
+
 .modal-content {
   background-color: #FAFAFA;
   margin: 15% auto;
-  padding: 20px;
+  padding: 50px;
   border: 1px solid #888;
   width: 80%;
   display: flex;
@@ -606,18 +611,26 @@ body {
 }
 
 .modal-img {
-  width: 100%;
+  width: 500px;
+}
+
+.modal-block {
+  padding-left: 50px;
+}
+
+.img-pets-card-modal {
+  width: 450px;
 }
 
 .title-modal {
   font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
   font-size: 3.5rem;
   line-height: 4.5rem;
   letter-spacing: 0.06em;
-  color: #545454;
-  font-style: normal;
-  font-weight: 400;
   color: black;
+  padding-bottom: 10px;
 }
 
 .type-modal {
@@ -632,11 +645,20 @@ body {
 }
 
 .description-modal {
-  font-family: "Arial";
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
   font-size: 1.5rem;
-  line-height: 2.4rem;
-  margin: 50px 0;
+  line-height: 1.7rem;
+  letter-spacing: 0.06em;
+  margin: 30px 0;
   color: black;
+}
+
+.list-modal li {
+  margin-bottom: 5px;
+  background: url(../img/dot.svg) no-repeat left center;
+  padding: 0px 0 11px 24px;
 }
 
 .title-options {
@@ -709,6 +731,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 80px;
 }
 .slider .pets-card {
   width: 270px;
