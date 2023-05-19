@@ -1,7 +1,8 @@
-import './js/matrix'
-import { createMatrix } from './js/matrix';
+import "./js/matrix";
+import { createMatrix } from "./js/matrix";
 import "./style.scss";
 function startGame() {
-  createMatrix()
+  createMatrix();
 }
-startGame()
+startGame();
+
