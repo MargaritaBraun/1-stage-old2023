@@ -22,6 +22,11 @@ function addBooms(bombCount) {
   }
 }
 
+export function getAllBeighbors(coordinates) {
+  const { x, y } = coordinates;
+
+}
+
 export function createMatrix(width = 8, height = 8, bombCount = 10) {
   matrix = Array.from({ length: height }, () =>
     Array.from({ length: width }, () => 0)
