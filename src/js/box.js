@@ -50,7 +50,7 @@ class Box {
     }
     
     this.boxElem = boxElem
-    appElem.addEventListener('click', this.onBoxClick.bind(this))
+    this.boxElem.addEventListener("click", this.onBoxClick.bind(this));
     appElem.appendChild(boxElem)
   }
 }
