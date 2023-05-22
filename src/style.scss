@@ -11,6 +11,7 @@ body {
   max-height: calc(#{$boxSize} * 8);
   display: flex;
   flex-wrap: wrap;
+  margin: auto;
 }
 .box {
   background-color: rgb(21, 129, 39);
@@ -20,4 +21,31 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  &.initial {
+    border: 1px solid grey;
+    border-style: outset;
+    cursor: pointer;
+  }
+
+  &.bomb-count-1 {
+    color: rgb(245, 6, 6);
+  }
+
+  &.bomb-count-2 {
+    color: rgb(17, 253, 9);
+  }
+
+  &.bomb-count-3 {
+    color: rgb(218, 233, 10);
+  }
+  &.bomb-count-4 {
+    color: rgb(255, 0, 179);
+  }
+  &.bomb-count-5 {
+    color: rgb(255, 4, 4);
+  }
+  &.bomb-count-6 {
+    color: rgb(11, 255, 174);
+  }
 }
