@@ -42,7 +42,15 @@ export function getAllNeighbors(coordinates) {
   );
 }
 
-export function createMatrix(width = 8, height = 8, bombCount = 10) {
+export function openAllBoxes() {
+  matrix.forEach((matrixLine) => {
+    matrixLine.forEach((box) => {
+        box.open();
+    })
+  })
+}
+
+export function createMatrix(width = 10, height = 10, bombCount = 10) {
   matrix = Array.from({ length: height }, () =>
     Array.from({ length: width }, () => 0)
   );
