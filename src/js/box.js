@@ -1,57 +1,87 @@
-import { getAllNeighbors, appElem } from "./matrix";
+import { getAllNeighbors, appElem, openAllBoxes } from "./matrix";
 class Box {
   constructor(isBomb, coordinates) {
-    this.isBomb = isBomb
-    this.coordinates = coordinates
+    this.isBomb = isBomb;
+    this.coordinates = coordinates;
   }
   setBoxValue(value) {
-    this.value = value
+    this.value = value;
   }
 
   setBoxType() {
-    
     if (this.isBomb) {
       this.setBoxValue("💣");
-      return
+      return;
     }
-    const allNeighbors = getAllNeighbors(this.coordinates)
-    let bombCount = 0
-    allNeighbors.forEach(neighbor => {
+    const allNeighbors = getAllNeighbors(this.coordinates);
+    let bombCount = 0;
+    allNeighbors.forEach((neighbor) => {
       if (neighbor === 1 || neighbor.isBomb) {
-        bombCount++
+        bombCount++;
       }
-    })
+    });
 
     if (bombCount) {
       this.setBoxValue(bombCount);
     }
   }
-  onBoxClick() {
-    if (!this.value) {
-      this.isOpenned = true;
-      this.boxElem.classList.remove('initial')
-      const allNeighbors = getAllNeighbors(this.coordinates)
+
+  showBoxValue() {
+    this.boxElem.innerHTML = this.value || "";
+  }
+
+  setFlag(isFlagged) {
+    this.isFlagged = isFlagged;
+    this.boxElem.innerHTML = isFlagged ? "⚑" : "";
+  }
+
+  open() {
+    this.isOpenned = true;
+    this.boxElem.classList.remove("initial");
+    this.showBoxValue();
+  }
+
+  onBoxClick(allOpenNumber = false) {
+    if (this.isFlagged) {
+      this.setFlag(false)
+      return
+    }
+    if (!this.value && !this.isOpenned) {
+      this.open();
+      const allNeighbors = getAllNeighbors(this.coordinates);
 
       allNeighbors.forEach((neighbor) => {
-        if (!neighbor.value && !neighbor.isOpenned) {
-          neighbor.onBoxClick();
+        if (!neighbor.isOpenned) {
+          neighbor.onBoxClick(true);
         }
-      })
+      });
+    } else if (
+      (this.value && allOpenNumber) ||
+      typeof this.value === "number"
+    ) {
+      this.open();
+    } else if (this.isBomb) {
+      openAllBoxes();
     }
+    this.showBoxValue();
   }
 
   createBoxOnArea() {
-    const boxElem = document.createElement('div')
-    boxElem.classList.add('box')
+    const boxElem = document.createElement("div");
+    boxElem.classList.add("box");
     boxElem.classList.add("initial");
-    boxElem.innerHTML = this.value || ' '
+
     if (this.value) {
       boxElem.classList.add(`bomb-count-${this.value}`);
     }
-    
-    this.boxElem = boxElem
-    this.boxElem.addEventListener("click", this.onBoxClick.bind(this));
-    appElem.appendChild(boxElem)
+
+    this.boxElem = boxElem;
+    this.boxElem.addEventListener("click", () => this.onBoxClick());
+    this.boxElem.addEventListener("contextmenu", (e) => {
+      e.preventDefault();
+      this.setFlag(true);
+    });
+    appElem.appendChild(boxElem);
   }
 }
 

@@ -1,20 +1,22 @@
-$boxSize: 20px;
+$boxSize: 40px;
 * {
   box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
 }
 body {
-  background-color: rgb(148, 211, 48);
+  background-color: rgb(230, 255, 8);
 }
 .container {
   background-color: rgb(77, 14, 129);
-  max-width: calc(#{$boxSize} * 8);
-  max-height: calc(#{$boxSize} * 8);
+  max-width: calc(#{$boxSize} * 10);
+  max-height: calc(#{$boxSize} * 10);
   display: flex;
   flex-wrap: wrap;
   margin: auto;
 }
 .box {
-  background-color: rgb(21, 129, 39);
+  background-color: rgb(31, 252, 49);
   width: $boxSize;
   height: $boxSize;
   border: 1px solid darkblue;
@@ -23,9 +25,10 @@ body {
   justify-content: center;
 
   &.initial {
-    border: 1px solid grey;
+    border: 3px solid grey;
     border-style: outset;
     cursor: pointer;
+    background-color: rgb(38, 17, 88);
   }
 
   &.bomb-count-1 {
@@ -33,7 +36,7 @@ body {
   }
 
   &.bomb-count-2 {
-    color: rgb(17, 253, 9);
+    color: rgb(8, 3, 248);
   }
 
   &.bomb-count-3 {
