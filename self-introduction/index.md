@@ -6,8 +6,7 @@ link https://youtu.be/lep30gxALnk
 +    **DISCORD --- Margarita_Parkalova#2533**
 +    **margobraun777@gmail.com**
 +    **[My Vkontakte profile](https://vk.com/id176668841)**
-+    **[My Instagram profile](https://www.instagram.com/rita_braun/?hl=ru)**
-+    
++    **[My Instagram profile](https://www.instagram.com/rita_braun/?hl=ru)**   
 ***I am 25 years old. I have a family and a child after maternity leave I want to go to work as a developer of websites and applications***
 ***My professional education
 I graduated with honors from the Gomel State College of Folk Arts and Crafts with a degree in artist of decorative and applied art and teacher. Although it is the word artist that is most suitable for my vocation, since I was more able to perform on stage and participate in various events than to draw and craft***
