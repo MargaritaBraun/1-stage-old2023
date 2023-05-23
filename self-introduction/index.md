@@ -14,7 +14,7 @@
 
 ***I graduated with honors from the Gomel State College of Folk Arts and Crafts with a degree in artist of decorative and applied art and teacher. Although it is the word artist that is most suitable for my vocation, since I was more able to perform on stage and participate in various events than to draw and craft***
 
-*** At the moment I am studying at the correspondence department in "The Belarusian State University of Culture and Arts"
+***At the moment I am studying at the correspondence department in "The Belarusian State University of Culture and Arts"
 The educational establishment "The Belarusian State University of Culture and Arts" is the leading institution of higher education in the sphere of culture Belarus.***
 
 ***My specialization is "Computer technology in Art". I like to combine computer technology and art, so now I am studying at RS School and taking a course in JS\Frontend development. The preparatory stage is a new and interesting experience for me.***
