@@ -1,0 +1,57 @@
+$boxSize: 40px;
+* {
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+}
+body {
+  background-color: rgb(230, 255, 8);
+}
+.container {
+  background-color: rgb(77, 14, 129);
+  max-width: calc(#{$boxSize} * 10);
+  max-height: calc(#{$boxSize} * 10);
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+.box {
+  background-color: rgb(31, 252, 49);
+  width: $boxSize;
+  height: $boxSize;
+  border: 1px solid darkblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &.initial {
+    border: 3px solid grey;
+    border-style: outset;
+    cursor: pointer;
+    background-color: rgb(38, 17, 88);
+  }
+
+  &.bomb-count-1 {
+    color: rgb(245, 6, 6);
+  }
+
+  &.bomb-count-2 {
+    color: rgb(8, 3, 248);
+  }
+
+  &.bomb-count-3 {
+    color: rgb(218, 233, 10);
+  }
+  &.bomb-count-4 {
+    color: rgb(255, 0, 179);
+  }
+  &.bomb-count-5 {
+    color: rgb(255, 4, 4);
+  }
+  &.bomb-count-6 {
+    color: rgb(11, 255, 174);
+  }
+  &.bomb-count-7 {
+    color: rgb(11, 255, 174);
+  }
+}
