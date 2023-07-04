@@ -1,0 +1,87 @@
+.startScreen {
+    background: url('../img/noise-transparent.svg'), radial-gradient(110.67% 538.64% at 5.73% 50%, #513d2f 0%, #1a1a1c 100%), #211f20;
+}
+
+.startScreen__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-height: 813px;
+    @include media-tablet {
+        flex-direction: column;
+        padding-top: 30px;
+    }
+
+    @include media-mobile {
+        padding-top: 60px;
+    }
+}
+
+.startScreen__block {
+    width: 460px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @include appearance-humburger-menu {
+        width: 100%;
+        align-items: center;
+    }
+
+    h2 {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4.4rem;
+    line-height: 5.7rem;
+    color: $color-light-xl;
+    letter-spacing: 0.06em;
+    @include appearance-humburger-menu {
+        text-align: center;
+    }
+
+    @include media-mobile {
+        font-size: 2.5rem;
+        line-height: 3.2rem;
+    }
+
+    @include media-mobilesmall {
+        width: 250px;
+    }
+    }
+}
+
+.text-startScreen {
+    @include paragraph-l;
+    margin-top: 42px;
+    color: $color-dark-s;
+    @include appearance-humburger-menu {
+        padding: 0 100px;
+        text-align: center;
+    }
+    @include media-mobile {
+        padding: 0 10px;
+        font-size: 1.5rem;
+        line-height: 2.4rem;
+    }
+    @include media-mobilesmall {
+        padding: 0;
+    }
+}
+
+.start-screen-puppy {
+    align-self: flex-end;
+    max-width: 90%;
+    padding-left: 40px;
+    img {
+        width: 100%;
+        padding-top: 100px;
+        @include media-tablet {
+            padding-top: 20px;
+            width: 70%;
+        }
+        @include media-mobile {
+            width: 100%;
+            padding: 105px 0 0 40px;
+        }
+    }
+}

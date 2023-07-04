@@ -1,0 +1,54 @@
+.button-primary {
+    width: 207px;
+    height: 52px;
+    border-radius: 100px;
+    background-color: $color-button;
+    margin-top: 42px;
+    cursor: pointer;
+    @include media-tablet {
+        align-self: center;
+    }
+    span {
+        width: 117px;
+        height: 22px;
+        @include button-text;
+    }
+    &:hover {
+        background-color: $color-button-active;
+        transform: scale(105%);
+        transition: background-color 3s, transform 2.5s;
+    }
+}
+
+.button_secondary {
+    width: 187px;
+    height: 52px;
+    border-radius: 100px;
+    border: 2px solid #F1CDB3;
+    cursor: pointer;
+    transition: all .3s;
+    &:hover {
+        background-color: $color-primary-light;
+        transform: scale(85%);
+        transition: background-color 3s, transform 2.5s;
+    }
+    span {
+        @include button-text;
+    }
+}
+
+.button-pets-card {
+    background-color: #F1CDB3;
+    width: 261px;
+    height: 52px;
+    cursor: pointer;
+    transition: all .3s;
+    margin: 0;
+    @include media-mobile {
+        width: 260px;
+    }
+}
+
+.button-margin {
+    margin: 42px 0 42px 0;
+}

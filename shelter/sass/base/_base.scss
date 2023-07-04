@@ -1,0 +1,115 @@
+/* Обнуление */
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+ul, ol, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: $color-light-xl;
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+}
+
+//header
+    .header {
+        background: url('../img/noise-transparent.svg'),
+        radial-gradient(110.67% 538.64% at 5.73% 50%, #513d2f 0%, #1a1a1c 100%),
+        #211f20;
+    }
+
+.header__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 20px 0px 0px 0px;
+    @include media-tablet {
+    padding: 30px 0;
+    }
+}
+
+
+//logo_title
+.logo_title {
+    &:hover {
+        transform: scale(110%);
+        transition: background-color 3s, transform 2.5s;
+    }
+    .logo-href {
+    font-size: 3.2rem;
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    font-weight: 400;
+    line-height: 3.5rem;
+    letter-spacing: 0.06em;
+    color: $color-primary;
+    scroll-behavior: smooth;
+}
+}
+
+
+.logo_subtitle {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.1em;
+    padding: 10px 0 0 4px;
+    color: $color-light-xl;
+}
+
+.nav-panel {
+    display: flex;
+    flex-direction: row;
+    width: 443px;
+    justify-content: space-between;
+    padding: 25px 0px 0px 0px;
+}
+
+.item-menu {
+    a {
+        font-family: 'Arial';
+        font-size: 1.4rem;
+        font-style: normal;
+        font-weight: 400;
+        color: $item-menu-color;
+        line-height: 2.4rem;
+        scroll-behavior: smooth;
+
+        &:hover {
+            color: $item-menu-active;
+            border-bottom: 3px solid $item-menu-active;
+            transition: border-bottom .8s ease-in-out;
+        }
+
+    }
+}
+
+.item-active {
+    color: $item-menu-active;
+    border-bottom: 3px solid $item-menu-active;
+    pointer-events: none;
+    @include appearance-humburger-menu {
+        color: $item-menu-active;
+    }
+}
+
